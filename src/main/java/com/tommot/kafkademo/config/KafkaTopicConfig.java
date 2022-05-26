@@ -11,8 +11,7 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic tommotTopic(){
-        return TopicBuilder.name("kafka-topic")
-                .partitions(10)
+        return TopicBuilder.name("tommot-topic")
                 .build();
     }
 }
