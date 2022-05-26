@@ -14,4 +14,10 @@ public class KafkaTopicConfig {
         return TopicBuilder.name("tommot-topic")
                 .build();
     }
+
+
+    @Bean
+    public String getString(){
+        return new String();
+    }
 }
