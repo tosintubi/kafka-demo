@@ -13,8 +13,8 @@ public class KafkaConsumer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumer.class);
 
-    @KafkaListener(topics="tommot-topic", groupId = "tommot-kafka-group")
-    public void consumer(String message){
-        LOGGER.info(String.format("Message received -> %s", message));
-    }
+//    @KafkaListener(topics="tommot-topic-2", groupId = "tommot-kafka-group")
+//    public void consumer(String message){
+//        LOGGER.info(String.format("Message received -> %s", message));
+//    }
 }
