@@ -24,7 +24,6 @@ public class MessageController {
         return  ResponseEntity.ok("message send to the topic");
     }
 
-
     @PostMapping("/publish")
     public ResponseEntity<User> publish(@RequestBody  User user){
         User usr = jsonKafkaProducer.sendMessage(user);
